@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>
+            The laptop price predictor
+        </h1>
+        <div class="prediction">
+            <h2>Predicted Price: <span id="price">0</span></h2>
+        </div>
+    </nav>
+    <main>
+        <form action="#" id="form">
+            <label for="company">Company</label>
+            <select required name="company" id="company">
+                <option value="Apple">Apple</option>
+                <option value="Razer">Razer</option>
+                <option value="HP">HP</option>
+                <option value="Acer">Acer</option>
+                <option value="Asus">Asus</option>
+                <option value="Dell">Dell</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Chuwi">Chuwi</option>
+                <option value="MSI">MSI</option>
+                <option value="Microsoft">Microsoft</option>
+                <option value="Toshiba">Toshiba</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Xiaomi">Xiaomi</option>
+                <option value="Vero">Vero</option>
+                <option value="Razer">Razer</option>
+                <option value="Mediacom">Mediacom</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Google">Google</option>
+                <option value="Fujitsu">Fujitsu</option>
+                <option value="LG">LG</option>
+            </select>
+            <label for="typename">Type</label>
+            <select required name="typename" id="type">
+                <option value="Ultrabook">Ultrabook</option>
+                <option value="Notebook">Notebook</option>
+                <option value="Netbook">Netbook</option>
+                <option value="Gaming">Gaming</option>
+                <option value="2 in 1 Convertible">2 in 1 Convertible</option>
+                <option value="Workstation">Workstation</option>
+            </select>
+            <label for="ram">RAM</label>
+            <select required name="ram" id="ram">
+                <option value="2">2GB</option>
+                <option value="4">4GB</option>
+                <option value="6">6GB</option>
+                <option value="8">8GB</option>
+                <option value="12">12GB</option>
+                <option value="16">16GB</option>
+                <option value="24">24GB</option>
+                <option value="32">32GB</option>
+                <option value="64">64GB</option>
+            </select>
+            <!-- "weight": "1.78",
+  "touch_screen": "0",
+  "resolution": "1920x1080",
+  "ips": "1",
+  "inches": "15.6",
+  "cpu_brand": "Intel Core i5",
+  "HDD":"1024",
+  "SSD": "512",
+  "gpu_brand": "Intel",
+  "os": "Mac" -->
+        <label for="weight">Weight</label>
+        <input required  type="number" name="weight" id="weight" step="0.01">
+        <label for="touch_screen">Touch Screen</label>
+        <select required name="touch_screen" id="touch_screen">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <label for="resolution">Resolution</label>
+        <input required  type="text" name="resolution" id="resolution" placeholder="Please type like 1920x1080">
+        <label for="ips">IPS</label>
+        <select required name="ips" id="ips">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <label for="inches">Inches</label>
+        <input required  type="number" name="inches" id="inches" step="0.01">
+        <label for="cpu_brand">CPU Brand</label>
+        <select required name="cpu_brand" id="cpu_brand">
+            <option value="Intel Core i5">Intel Core i5</option>
+            <option value="Intel Core i7">Intel Core i7</option>
+            <option value="AMD Processor">AMD Processor</option>
+            <option value="Intel Core i3">Intel Core i3</option>
+            <option value="Other Intel Processor">Other Intel Processor</option>
+        </select>
+        <label for="HDD">HDD</label>
+        <input required  type="number" name="HDD" id="HDD" step="1">
+        <label for="SSD">SSD</label>
+        <input required  type="number" name="SSD" id="SSD" step="1">
+        <label for="gpu_brand">GPU Brand</label>
+        <select required name="gpu_brand" id="gpu_brand">
+            <option value="Intel">Intel</option>
+            <option value="Nvidia">Nvidia</option>
+            <option value="AMD">AMD</option>
+        </select>
+        <label for="os">OS</label>
+        <select required name="os" id="os">
+            <option value="Windows">Windows</option>
+            <option value="Mac">Mac</option>
+            <option value="Others/No OS/Linux">Others/No OS/Linux</option>
+        </select>
+        <button type="submit">Predict </button>
+        </form>
+    </main>
+    <footer>
+        Made with ❤️ by <a href="https://github.com/Gorsi123/">Abhishek Kumar</a>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
